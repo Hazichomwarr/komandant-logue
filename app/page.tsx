@@ -5,7 +5,7 @@ import { Hero } from "@/components/landing/Hero";
 import { Impact } from "@/components/landing/Impact";
 import { LatestContent } from "@/components/landing/LatestContent";
 import { Navbar } from "@/components/landing/Navbar";
-import { Recommendations } from "@/components/landing/Recommendations";
+import { RecommendationsPreview } from "@/components/landing/RecommendationsPreview";
 import { Testimonials } from "@/components/landing/Testimonials";
 
 export default function Home() {
@@ -17,7 +17,7 @@ export default function Home() {
         <About />
         <Impact />
         <LatestContent />
-        <Recommendations />
+        <RecommendationsPreview />
         <Testimonials />
         <CommunityCTA />
       </main>

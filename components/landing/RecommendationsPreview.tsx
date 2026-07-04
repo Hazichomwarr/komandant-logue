@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { ArrowUpRight, Check } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 type FeaturedRecommendation = {
   name: string;
@@ -36,7 +37,7 @@ const fadeUp = {
   visible: { opacity: 1, y: 0 },
 };
 
-export function Recommendations() {
+export function RecommendationsPreview() {
   return (
     <section
       id="recommandations"
@@ -77,7 +78,8 @@ export function Recommendations() {
               accompagner un mode de vie plus sain.
             </p>
             <blockquote className="mt-7 border-l-2 border-[#b78a54] pl-5 text-xl font-medium leading-8 text-stone-950">
-              &quot;Je ne recommande que les produits que j&apos;utilise réellement.&quot;
+              &quot;Je ne recommande que les produits que j&apos;utilise
+              réellement.&quot;
             </blockquote>
           </motion.div>
         </motion.div>
@@ -87,12 +89,12 @@ export function Recommendations() {
           whileInView="visible"
           viewport={{ once: true, amount: 0.18 }}
           variants={container}
-          className="mt-14 overflow-hidden rounded-[2rem] border border-stone-200/80 bg-white shadow-2xl shadow-stone-950/[0.06] lg:grid lg:grid-cols-[1.08fr_0.92fr]"
+          className="mt-14 overflow-hidden rounded-4xl border border-stone-200/80 bg-white shadow-2xl shadow-stone-950/6] lg:grid lg:grid-cols-[1.08fr_0.92fr]"
         >
           <motion.div
             variants={fadeUp}
             transition={{ duration: 0.75, ease: "easeOut" }}
-            className="relative min-h-[24rem] bg-stone-100 sm:min-h-[34rem] lg:min-h-[42rem]"
+            className="relative min-h-96xl bg-stone-100 sm:min-h-136 lg:min-h-168"
           >
             <Image
               src={featuredRecommendation.image}
@@ -101,7 +103,7 @@ export function Recommendations() {
               sizes="(max-width: 1024px) 100vw, 54vw"
               className="object-cover transition duration-700 hover:scale-[1.03]"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-stone-950/15 via-transparent to-white/15" />
+            <div className="absolute inset-0 bg-linear-to-t from-stone-950/15 via-transparent to-white/15" />
           </motion.div>
 
           <motion.div
@@ -133,13 +135,20 @@ export function Recommendations() {
               ))}
             </ul>
 
-            <a
+            {/* <a
               href="#recommandations"
               className="mt-12 inline-flex items-center gap-2 text-sm font-bold uppercase tracking-[0.18em] text-stone-950 transition-colors hover:text-[#9b7444]"
             >
               Découvrir pourquoi je le recommande
               <ArrowUpRight className="h-4 w-4" strokeWidth={2} />
-            </a>
+            </a> */}
+            <Link
+              href="/recommandations"
+              className="mt-12 inline-flex items-center gap-2 text-sm font-bold uppercase tracking-[0.18em] text-stone-950 transition-colors hover:text-[#9b7444]"
+            >
+              Voir toutes mes recommandations
+              <ArrowUpRight className="h-4 w-4" strokeWidth={2} />
+            </Link>
           </motion.div>
         </motion.article>
       </div>

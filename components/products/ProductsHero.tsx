@@ -34,7 +34,7 @@ export function ProductsHero() {
           <div className="relative overflow-hidden rounded-4xl border border-white/10 bg-white/8 p-3 shadow-2xl shadow-black/30 backdrop-blur">
             <div className="relative aspect-4/5 overflow-hidden rounded-3xl bg-stone-900 sm:aspect-16/13 lg:aspect-5/4">
               <Image
-                src="/images/kl-drapo.jpeg"
+                src="/images/kl-portrait-hat.jpeg"
                 alt="Komandant Lougué dans un moment lifestyle"
                 fill
                 priority
