@@ -1,6 +1,7 @@
 import { About } from "@/components/landing/About";
 import { Hero } from "@/components/landing/Hero";
 import { Impact } from "@/components/landing/Impact";
+import { LatestContent } from "@/components/landing/LatestContent";
 import { Navbar } from "@/components/landing/Navbar";
 
 export default function Home() {
@@ -11,6 +12,7 @@ export default function Home() {
         <Hero />
         <About />
         <Impact />
+        <LatestContent />
       </main>
     </div>
   );
