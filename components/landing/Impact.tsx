@@ -66,7 +66,7 @@ export function Impact() {
               key={stat.label}
               variants={card}
               transition={{ duration: 0.65, ease: "easeOut" }}
-              className="rounded-[1.5rem] border border-white/15 bg-white/[0.09] p-7 shadow-2xl shadow-stone-950/20 backdrop-blur-xl transition duration-300 hover:-translate-y-1 hover:border-[#b78a54]/45 hover:bg-white/[0.13] sm:p-8"
+              className="rounded-3xl border border-white/15 bg-white/9 p-7 shadow-2xl shadow-stone-950/20 backdrop-blur-xl transition duration-300 hover:-translate-y-1 hover:border-[#b78a54]/45 hover:bg-white/13 sm:p-8"
             >
               <p className="text-4xl font-semibold tracking-tight text-white sm:text-5xl">
                 {stat.value}
