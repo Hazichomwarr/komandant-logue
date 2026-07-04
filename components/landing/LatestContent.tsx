@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowUpRight, Camera, Music2, PlayCircle } from "lucide-react";
+import { ArrowUpRight, Camera, MessageCircle, Music2, PlayCircle } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 
 type ContentCard = {
@@ -40,6 +40,15 @@ const contentCards: ContentCard[] = [
     metric: "92K vues",
     href: "#contenu",
     Icon: PlayCircle,
+  },
+  {
+    platform: "Facebook",
+    title: "Une conversation avec la communauté",
+    description:
+      "Un partage plus personnel pour répondre, encourager et garder le lien.",
+    metric: "64K vues",
+    href: "#contenu",
+    Icon: MessageCircle,
   },
 ];
 
@@ -100,7 +109,7 @@ export function LatestContent() {
           whileInView="visible"
           viewport={{ once: true, amount: 0.18 }}
           variants={container}
-          className="mt-14 grid gap-5 md:grid-cols-3"
+          className="mt-14 grid gap-5 md:grid-cols-2 xl:grid-cols-4"
         >
           {contentCards.map(({ platform, title, description, metric, href, Icon }) => (
             <motion.article

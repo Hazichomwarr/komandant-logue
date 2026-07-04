@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const stats = [
   { value: "120K+", label: "Abonnés" },
@@ -24,7 +25,17 @@ const card = {
 
 export function Impact() {
   return (
-    <section className="bg-[#f7f4ef] px-5 py-24 sm:px-8 lg:px-10 lg:py-32">
+    <section className="relative isolate overflow-hidden bg-stone-950 px-5 py-24 text-white sm:px-8 lg:px-10 lg:py-32">
+      <Image
+        src="/images/kl-drapo.jpeg"
+        alt=""
+        fill
+        sizes="100vw"
+        className="-z-20 object-cover object-[50%_32%]"
+      />
+      <div className="absolute inset-0 -z-10 bg-stone-950/30" />
+      <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_18%_20%,rgba(183,138,84,0.32),transparent_32%),linear-gradient(90deg,rgba(12,10,9,0.92),rgba(12,10,9,0.58)_48%,rgba(12,10,9,0.84))]" />
+
       <div className="mx-auto w-full max-w-7xl">
         <motion.div
           initial="hidden"
@@ -37,7 +48,7 @@ export function Impact() {
           <p className="mb-4 text-xs font-bold uppercase tracking-[0.28em] text-[#9b7444]">
             Impact
           </p>
-          <h2 className="text-4xl font-semibold leading-[1.05] tracking-tight text-stone-950 text-balance sm:text-5xl">
+          <h2 className="text-4xl font-semibold leading-[1.05] tracking-tight text-white text-balance sm:text-5xl">
             Une communauté qui grandit autour de la confiance et du passage à
             l&apos;action.
           </h2>
@@ -55,12 +66,12 @@ export function Impact() {
               key={stat.label}
               variants={card}
               transition={{ duration: 0.65, ease: "easeOut" }}
-              className="rounded-[1.5rem] border border-stone-200/80 bg-white/80 p-7 shadow-xl shadow-stone-950/[0.04] backdrop-blur transition duration-300 hover:-translate-y-1 hover:border-[#b78a54]/35 hover:shadow-2xl hover:shadow-stone-950/[0.07] sm:p-8"
+              className="rounded-[1.5rem] border border-white/15 bg-white/[0.09] p-7 shadow-2xl shadow-stone-950/20 backdrop-blur-xl transition duration-300 hover:-translate-y-1 hover:border-[#b78a54]/45 hover:bg-white/[0.13] sm:p-8"
             >
-              <p className="text-4xl font-semibold tracking-tight text-stone-950 sm:text-5xl">
+              <p className="text-4xl font-semibold tracking-tight text-white sm:text-5xl">
                 {stat.value}
               </p>
-              <p className="mt-4 text-sm font-bold uppercase tracking-[0.2em] text-stone-500">
+              <p className="mt-4 text-sm font-bold uppercase tracking-[0.2em] text-stone-300">
                 {stat.label}
               </p>
             </motion.div>
