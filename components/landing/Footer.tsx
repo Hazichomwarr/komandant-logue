@@ -2,10 +2,10 @@ import Link from "next/link";
 
 const navigationLinks = [
   { label: "Accueil", href: "/" },
-  { label: "À propos", href: "#a-propos" },
-  { label: "Contenu", href: "#contenu" },
-  { label: "Recommandations", href: "#recommandations" },
-  { label: "Communauté", href: "#communaute" },
+  { label: "À propos", href: "/#a-propos" },
+  { label: "Contenu", href: "/#contenu" },
+  { label: "Recommandations", href: "/recommandations" },
+  { label: "Communauté", href: "/#communaute" },
 ];
 
 const socialLinks = [
