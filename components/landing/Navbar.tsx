@@ -23,7 +23,7 @@ export function Navbar() {
           </span>
         </Link>
 
-        <div className="hidden items-center gap-8 rounded-full border border-stone-200/80 bg-white/70 px-7 py-3 text-sm font-medium text-stone-700 shadow-sm shadow-stone-950/[0.03] backdrop-blur-xl lg:flex">
+        <div className="hidden items-center gap-8 rounded-full border border-stone-200/80 bg-white/70 px-7 py-3 text-sm font-medium text-stone-700 shadow-sm shadow-stone-950/3 backdrop-blur-xl lg:flex">
           {navItems.map((item) => (
             <Link
               key={item.label}

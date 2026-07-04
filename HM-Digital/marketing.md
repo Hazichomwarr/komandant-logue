@@ -295,6 +295,8 @@ For creators and influencers:
 
 The person is the brand.
 
+People join people. They buy from people they trust.
+
 Products support the brand.
 
 Content builds trust.

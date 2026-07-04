@@ -1,3 +1,4 @@
+// components/landing/Hero.tsx
 import Image from "next/image";
 import Link from "next/link";
 
@@ -24,7 +25,8 @@ export function Hero() {
 
           <p className="mt-7 max-w-2xl text-lg leading-8 text-stone-700 sm:text-xl sm:leading-9">
             Je partage mon parcours, mes habitudes et mes idées pour aider une
-            communauté ambitieuse à avancer avec discipline, clarté et confiance.
+            communauté ambitieuse à avancer avec discipline, clarté et
+            confiance.
           </p>
 
           <div className="mt-9 flex flex-col gap-4 sm:flex-row">
@@ -56,7 +58,7 @@ export function Hero() {
           </dl>
         </div>
 
-        <div className="relative mx-auto w-full max-w-[34rem] lg:mr-0">
+        <div className="relative mx-auto w-full max-w-136 lg:mr-0">
           <div className="absolute -left-6 top-12 z-10 hidden rounded-3xl border border-white/60 bg-white/75 px-5 py-4 shadow-2xl shadow-stone-950/10 backdrop-blur-xl sm:block">
             <p className="text-sm font-semibold text-stone-950">
               Discipline quotidienne
@@ -66,7 +68,7 @@ export function Hero() {
             </p>
           </div>
 
-          <div className="relative aspect-[4/5] overflow-hidden rounded-[2rem] bg-stone-200 shadow-2xl shadow-stone-950/20 ring-1 ring-stone-950/10">
+          <div className="relative aspect-4/5 overflow-hidden rounded-4xl bg-stone-200 shadow-2xl shadow-stone-950/20 ring-1 ring-stone-950/10">
             <Image
               src="/images/kl-portrait-white-tux.jpeg"
               alt="Portrait de Komandant Lougué"
@@ -75,12 +77,12 @@ export function Hero() {
               sizes="(max-width: 1024px) 90vw, 38vw"
               className="object-cover object-[54%_50%]"
             />
-            <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-stone-950/65 via-stone-950/10 to-transparent p-6 text-white sm:p-8">
+            {/* <div className="absolute inset-x-0 bottom-0 bg-linear-to-t from-stone-950/65 via-stone-950/10 to-transparent p-6 text-white sm:p-8">
               <p className="max-w-xs text-xl font-semibold leading-7">
                 La personne est la marque. Les recommandations suivent la
                 confiance.
               </p>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

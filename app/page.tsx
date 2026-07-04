@@ -1,4 +1,6 @@
+import { About } from "@/components/landing/About";
 import { Hero } from "@/components/landing/Hero";
+import { Impact } from "@/components/landing/Impact";
 import { Navbar } from "@/components/landing/Navbar";
 
 export default function Home() {
@@ -7,6 +9,8 @@ export default function Home() {
       <Navbar />
       <main>
         <Hero />
+        <About />
+        <Impact />
       </main>
     </div>
   );
