@@ -9,10 +9,13 @@ const navigationLinks = [
 ];
 
 const socialLinks = [
-  { label: "Instagram", href: "#" },
-  { label: "YouTube", href: "#" },
-  { label: "TikTok", href: "#" },
-  { label: "Facebook", href: "#" },
+  // { label: "Instagram", href: "#" },
+  // { label: "YouTube", href: "#" },
+  {
+    label: "TikTok",
+    href: "https://www.tiktok.com/@abdoulayelougue0?_r=1&_t=ZT-97tmx3hsHQT",
+  },
+  { label: "Facebook", href: "https://www.facebook.com/share/p/18wesrtBTx/" },
 ];
 
 export function Footer() {
@@ -20,7 +23,10 @@ export function Footer() {
     <footer className="border-t border-stone-200 bg-white px-5 py-12 sm:px-8 lg:px-10">
       <div className="mx-auto grid w-full max-w-7xl gap-10 lg:grid-cols-[1.2fr_0.8fr_0.8fr]">
         <div>
-          <Link href="/" className="text-xl font-semibold tracking-tight text-stone-950">
+          <Link
+            href="/"
+            className="text-xl font-semibold tracking-tight text-stone-950"
+          >
             Komandant Lougué
           </Link>
           <p className="mt-4 max-w-md text-base leading-7 text-stone-600">
