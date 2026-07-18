@@ -119,7 +119,7 @@ export function LatestContent() {
           whileInView="visible"
           viewport={{ once: true, amount: 0.18 }}
           variants={container}
-          className="mt-14 grid gap-5 md:grid-cols-2 xl:grid-cols-4"
+          className="mt-14 grid gap-5 md:grid-cols-2"
         >
           {contentCards.map(
             ({ platform, title, description, metric, href, Icon }) => (
